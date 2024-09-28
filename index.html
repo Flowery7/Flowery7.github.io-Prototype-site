@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/star-favicon.png" type="image/png">
+  <title>Your Window Cleaning Business</title>
+ 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+ 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <!-- Font Awesome for Social Media Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+   header {
+  background-color: #eeeeee;
+  padding: 10px 0; /* Keep the original padding for the header */
+}
+
+.navbar {
+  padding-left: 20px;  /* Add padding to bring in the navbar */
+  padding-right: 20px; /* Add padding to bring in the navbar */
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.navbar-nav {
+  margin-left: auto; /* Ensure the menu is right-aligned */
+
+    }
+    .hero {
+      background: url('/pexels-konstantinolsen-287263.jpg') center center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px; /* Added padding */
+    }
+    .hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a dark shadow behind the text */
+}
+
+      margin-bottom: 10px; /* Added margin */
+    }
+    .hero p {
+      margin-bottom: 15px; /* Added margin */
+    }
+    .services, .gallery, .contact {
+      padding: 60px 0;
+    }
+    .service-item {
+      text-align: center;
+      padding: 20px;
+      margin: 10px; /* Added margin for spacing */
+    }
+    .service-item i {
+      font-size: 3rem;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+    }
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+ 
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light container">
+      <a class="navbar-brand" href="#">Crystal Clear Windows</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+ 
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div>
+      <h1>Crystal Clear Windows</h1>
+     
+      <a href="#contact" class="btn btn-primary mt-3">Get a Free Quote</a>
+    </div>
+    </section>
+  
+ 
+  <!-- Services Section -->
+  <section class="services container" id="services">
+    <h2 class="text-center mb-5">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4 service-item">
+        <i class="fas fa-broom"></i>
+        <h4>Residential Cleaning</h4>
+        <p>Expert window cleaning services for your home, ensuring streak-free and sparkling windows.</p>
+      </div>
+      <div class="col-md-4 service-item">
+        <i class="fas fa-building"></i>
+        <h4>Commercial Cleaning</h4>
+        <p>Professional window cleaning solutions tailored for businesses of all sizes.</p>
+      </div>
+      <div class="col-md-4 service-item">
+        <i class="fas fa-broom"></i>
+        <h4>Specialized Services</h4>
+        <p>Includes screen cleaning, gutter cleaning, and pressure washing to keep your property pristine.</p>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Gallery Section -->
+  <section class="gallery container" id="gallery">
+    <h2 class="text-center mb-5">Our Work</h2>
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4">
+        <img src="gallery1.jpg" alt="Window Cleaning 1" class="img-fluid">
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <img src="gallery2.jpg" alt="Window Cleaning 2" class="img-fluid">
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <img src="gallery3.jpg" alt="Window Cleaning 3" class="img-fluid">
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <img src="gallery4.jpg" alt="Window Cleaning 4" class="img-fluid">
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <img src="gallery5.jpg" alt="Window Cleaning 5" class="img-fluid">
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <img src="gallery6.jpg" alt="Window Cleaning 6" class="img-fluid">
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Contact Section -->
+<section class="contact container" id="contact">
+  <h2 class="text-center mb-5">Contact Us</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGqUkptwyStp1bFWM1VuysCyqDtn5SChhE6ZJJNNgf0NAhrw/viewform?embedded=true" width="320" height="411" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </div>
+</section>
+
+ 
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2024 WindowCleanPro. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+ 
+  <!-- Bootstrap JS and dependencies (Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ 
+  <!-- Optional: Custom JS -->
+  <script>
+    // Example: Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+ 
+</body>
+</html>
