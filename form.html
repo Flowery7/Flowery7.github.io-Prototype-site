@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/star-favicon.png" type="image/png">
+  <title>Window Cleaning in Yorkshire</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome for Social Media Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #eeeeee;
+      padding: 10px 0;
+    }
+
+    .navbar {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+
+    .hero {
+      background: url('pexels-konstantinolsen-287263.jpg') center center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Adjust padding for sections */
+    .contact {
+      padding: 60px 0;
+    }
+
+    /* Contact Form Iframe styling */
+    iframe {
+      width: 100%;
+      max-width: 100%;
+      height: 600px;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      iframe {
+        height: 400px; /* Adjust height for mobile */
+      }
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light container">
+      <a class="navbar-brand" href="#">Crystal Clear Windows</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div>
+      <h1>Crystal Clear Windows.</h1>
+    </div>
+  </section>
+
+  <!-- Contact Section (Form underneath the hero) -->
+  <section class="contact container" id="contact">
+    <h2 class="text-center mb-5">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGqUkptwyStp1bFWM1VuysCyqDtn5SChhE6ZJJNNgf0NAhrw/viewform?embedded=true">
+            Loading…
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2024 Crystal Clear Windows. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
