@@ -210,19 +210,25 @@
     <!-- Services Content -->
     <div class="row g-4" data-aos="fade-up" data-aos-delay="200">
       <div class="col-sm-6 col-md-4">
-        <div class="service-box">
+        <div class="service-box text-center">
+          <!-- Icon for Service -->
+          <i class="fas fa-home fa-3x service-icon mb-3"></i>
           <h3>Residential Window Cleaning</h3>
           <p>Crystal clear windows for your home with eco-friendly solutions and a streak-free shine.</p>
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
-        <div class="service-box">
+        <div class="service-box text-center">
+          <!-- Icon for Service -->
+          <i class="fas fa-building fa-3x service-icon mb-3"></i>
           <h3>Commercial Cleaning</h3>
           <p>Expert cleaning for offices, retail spaces, hotels, and high-rise buildings with minimal disruption to your business.</p>
         </div>
       </div>
       <div class="col-sm-6 col-md-4">
-        <div class="service-box">
+        <div class="service-box text-center">
+          <!-- Icon for Service -->
+          <i class="fas fa-city fa-3x service-icon mb-3"></i>
           <h3>High-Rise Cleaning</h3>
           <p>Specialized cleaning services for high-rise and large commercial complexes, ensuring safety and precision.</p>
         </div>
@@ -243,12 +249,20 @@
     <div class="row g-4" data-aos="fade-up" data-aos-delay="200">
       <div class="col-md-6">
         <div class="testimonial-box">
+          <!-- Client Badge -->
+          <div class="testimonial-badge mb-3">
+            <img src="client1.jpg" alt="Client 1" class="rounded-circle">
+          </div>
           <p>“Crystal Clear Windows has been fantastic! They always leave our office windows looking spotless.”</p>
           <p><strong>- John D., Office Manager</strong></p>
         </div>
       </div>
       <div class="col-md-6">
         <div class="testimonial-box">
+          <!-- Client Badge -->
+          <div class="testimonial-badge mb-3">
+            <img src="client2.jpg" alt="Client 2" class="rounded-circle">
+          </div>
           <p>“The team did an incredible job on our retail store’s windows, making the whole place look brighter and more inviting.”</p>
           <p><strong>- Sarah L., Store Owner</strong></p>
         </div>
@@ -309,14 +323,13 @@
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   }
 
+  .service-icon {
+    color: #88A4E3;
+  }
+
   .service-box h3, .testimonial-box strong {
     color: #007bff;
     font-weight: 600;
-  }
-
-  .service-box p, .testimonial-box p {
-    font-size: 1rem;
-    color: #333;
   }
 
   .section-divider {
@@ -340,15 +353,12 @@
     text-transform: uppercase;
   }
 
-  .testimonial-box {
-    font-style: italic;
-    background-color: #fff;
-    border-left: 4px solid #88A4E3;
-  }
-
-  .testimonial-box p:last-child {
-    font-style: normal;
-    text-align: right;
+  .testimonial-badge img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .contact-section form input, .contact-section form textarea {
@@ -377,6 +387,7 @@
     offset: 100
   });
 </script>
+
 
 
   <!-- Dynamic Scroll CSS and JavaScript Libraries -->
