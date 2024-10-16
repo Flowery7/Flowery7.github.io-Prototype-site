@@ -76,6 +76,25 @@
       }
     }
 
+    .advice-box {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+    }
+
+    .advice-box h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      color: #343a40;
+    }
+
+    .advice-box p {
+      font-family: 'Open Sans', sans-serif;
+      color: #555;
+    }
+
     footer {
       background-color: #343a40;
       color: white;
@@ -130,11 +149,26 @@
     </div>
   </section>
 
-  <!-- Contact Section (Form underneath the hero) -->
+  <!-- Contact Section (Two-column layout) -->
   <section class="contact container" id="contact">
     <h2 class="text-center mb-5">Get your quote.</h2>
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-8">
+    <div class="row">
+      <!-- Left Column: Advice Box -->
+      <div class="col-md-6">
+        <div class="advice-box">
+          <h3>Helpful Advice Before You Fill Out the Form</h3>
+          <p>Please make sure to provide accurate details so we can offer you the best quote possible. If you have any special requirements, mention them in the form. Thank you for choosing Crystal Clear Windows!</p>
+        </div>
+        
+        <!-- New Advice Box: What to Expect -->
+        <div class="advice-box">
+          <h3>What to Expect When We Arrive</h3>
+          <p>Our professional team will arrive on time, introduce themselves, and perform an initial inspection of your windows. The cleaning process will include both internal and external windows, leaving them spotless. After the job is completed, we ensure the area is tidy and clean, leaving no mess behind.</p>
+        </div>
+      </div>
+      
+      <!-- Right Column: Form -->
+      <div class="col-md-6">
         <div class="embed-responsive embed-responsive-16by9">
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfGqUkptwyStp1bFWM1VuysCyqDtn5SChhE6ZJJNNgf0NAhrw/viewform?embedded=true">
             Loading…
@@ -160,3 +194,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
