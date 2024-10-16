@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Required meta tags -->
@@ -84,44 +84,46 @@
       color: #007bff;
       margin-bottom: 15px;
     }
+/* Testimonials Section */
+.testimonials {
+  background-color: #f8f9fa; /* Add a light background to the section */
+  padding: 60px 0;
+}
 
-    /* Testimonials Section */
-    .testimonials {
-      background-color: #f8f9fa;
-      padding: 60px 0;
-    }
+.testimonial-item {
+  text-align: center;
+  background-color: #ffffff; /* White background for each testimonial */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
 
-    .testimonial-item {
-      text-align: center;
-      background-color: #ffffff;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      margin-bottom: 20px;
-      transition: box-shadow 0.3s ease;
-    }
+.testimonial-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-    .testimonial-item:hover {
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
+.testimonial-img {
+  margin-bottom: 15px;
+}
 
-    .testimonial-img {
-      margin-bottom: 15px;
-    }
+/* Change the color of the icon in the testimonials */
+.testimonials .testimonial-item .testimonial-img i {
+  color: #88A4E3; /* Your desired color */
+  transition: color 0.3s ease; /* Optional: Add a transition for a smoother effect */
+}
 
-    .testimonials .testimonial-item .testimonial-img i {
-      color: #88A4E3;
-      transition: color 0.3s ease;
-    }
+.testimonial-item h5 {
+  font-weight: bold;
+}
 
-    .testimonial-item h5 {
-      font-weight: bold;
-    }
+.testimonial-item p {
+  font-style: italic;
+  color: #555; /* Color for testimonial text */
+}
 
-    .testimonial-item p {
-      font-style: italic;
-      color: #555;
-    }
+
 
     /* Gallery Section */
     .gallery img {
@@ -248,78 +250,77 @@
       <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Window Cleaning 1" class="img-fluid">
     </div>
     <div class="col-sm-6 col-md-4">
-      <img src="pexels-photo-commercial-building.jpg" alt="Commercial Cleaning 2" class="img-fluid">
+      <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Window Cleaning 2" class="img-fluid">
     </div>
     <div class="col-sm-6 col-md-4">
-      <img src="pexels-markus-spiske-3808689.jpg" alt="High Rise Building" class="img-fluid">
+      <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Window Cleaning 3" class="img-fluid">
     </div>
   </div>
 </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <h2 class="text-center mb-5">What Our Clients Say</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="testimonial-item">
-            <i class="fas fa-quote-left testimonial-img"></i>
-            <h5>Emily R.</h5>
-            <p>"Outstanding job! My windows have never looked this clean. Highly recommend!"</p>
-          </div>
+
+  <section class="testimonials container" id="testimonials">
+  <h2 class="text-center mb-5">What Our Clients Say</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="testimonial-item shadow-sm p-4 rounded">
+        <div class="testimonial-img text-center mb-3">
+          <i class="fas fa-user-circle fa-3x text-muted"></i>
         </div>
-        <div class="col">
-          <div class="testimonial-item">
-            <i class="fas fa-quote-left testimonial-img"></i>
-            <h5>John M.</h5>
-            <p>"Professional and reliable service. Crystal Clear Windows exceeded my expectations!"</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="testimonial-item">
-            <i class="fas fa-quote-left testimonial-img"></i>
-            <h5>Sarah L.</h5>
-            <p>"Quick, efficient, and very thorough. Will definitely use them again."</p>
-          </div>
-        </div>
+        <h5 class="text-center font-weight-bold">John Doe</h5>
+        <p class="text-muted text-center">"Excellent service! My windows have never looked better.Top notch!"</p>
       </div>
     </div>
-  </section>
+    <div class="col-md-4">
+      <div class="testimonial-item shadow-sm p-4 rounded">
+        <div class="testimonial-img text-center mb-3">
+          <i class="fas fa-user-circle fa-3x text-muted"></i>
+        </div>
+        <h5 class="text-center font-weight-bold">Jane Smith</h5>
+        <p class="text-muted text-center">"Fast, professional, and affordable. Highly recommended!"</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="testimonial-item shadow-sm p-4 rounded">
+        <div class="testimonial-img text-center mb-3">
+          <i class="fas fa-user-circle fa-3x text-muted"></i>
+        </div>
+        <h5 class="text-center font-weight-bold">Robert Brown</h5>
+        <p class="text-muted text-center">"Great customer service and attention to detail. Will use again!"</p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Contact Section -->
-  <section class="contact container-fluid" id="contact" style="background-color: #f8f9fa;">
-    <h2 class="text-center mb-5">Contact Us</h2>
-    <div class="row">
-      <div class="col-md-6 mb-4">
-        <h5>Email</h5>
-        <p><i class="fa fa-envelope"></i> crystalclear@gmail.com</p>
-      </div>
-      <div class="col-md-6 mb-4">
-        <h5>Phone</h5>
-        <p><i class="fa fa-phone"></i> +44 123 4567 890</p>
-      </div>
-      <div class="col-md-6">
-        <h5>Follow Us</h5>
-        <div class="social-icons">
-          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h5>Location</h5>
-        <p><i class="fa fa-map-marker"></i> Yorkshire, UK</p>
+   <section id="contact" class="contact-us text-center py-5">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p class="mb-4">Please contact us to discuss your requirements. One of our team members will get in touch as soon as they are available. </p>
+    <div class="contact-details">
+      <p><i class="fas fa-phone-alt"></i> <a href="tel:+441234567890">+44 1234 567 890</a></p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:info@yourbusiness.com">info@yourbusiness.com</a></p>
+    </div>
+        <div class="row justify-content-center text-center">
+      <div class="col-md-8">
+        <a href="form.html" class="btn btn-primary mt-3">Get your quote.</a>
       </div>
     </div>
-  </section>
+    </section>
 
   <!-- Footer -->
-  <footer class="text-center py-4">
-    <p>© 2024 Crystal Clear Windows | All Rights Reserved.</p>
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2024 WindowCleanPro. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
