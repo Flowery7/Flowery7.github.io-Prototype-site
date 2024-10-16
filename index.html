@@ -22,7 +22,6 @@
       font-family: 'Open Sans', sans-serif;
       margin: 0;
       padding: 0;
-      color: #333; /* Consistent paragraph color */
     }
 
     header {
@@ -62,17 +61,8 @@
       padding: 60px 0;
     }
 
-    /* Service Item Styles */
-    .services h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2.5rem;
-      margin-bottom: 30px;
-      color: #007bff; /* Subtle enhancement */
-    }
-
-    .services p {
-      font-size: 1rem;
-      color: #555;
+    .services {
+      padding: 60px 0;
     }
 
     .service-item {
@@ -81,51 +71,18 @@
       background-color: #f8f9fa;
       border: 1px solid #ddd;
       border-radius: 5px;
-      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      transition: box-shadow 0.3s ease;
       margin-bottom: 20px;
     }
 
     .service-item:hover {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      transform: translateY(-5px); /* Subtle hover effect */
     }
 
     .service-item i {
       font-size: 3rem;
       color: #007bff;
       margin-bottom: 15px;
-    }
-
-    .service-item h4 {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      color: #007bff;
-    }
-
-    .service-item p {
-      font-size: 1rem;
-      color: #333;
-    }
-
-    /* Our Work Section */
-    .gallery h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2.5rem;
-      margin-bottom: 30px;
-      color: #88A4E3; /* Subtle color enhancement */
-    }
-
-    .gallery p {
-      font-size: 1rem;
-      color: #555;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-      margin-bottom: 15px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle enhancement */
     }
 
     /* Testimonials Section */
@@ -152,6 +109,11 @@
       margin-bottom: 15px;
     }
 
+    .testimonials .testimonial-item .testimonial-img i {
+      color: #88A4E3;
+      transition: color 0.3s ease;
+    }
+
     .testimonial-item h5 {
       font-weight: bold;
     }
@@ -161,7 +123,14 @@
       color: #555;
     }
 
-    /* Footer */
+    /* Gallery Section */
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
     footer {
       background-color: #343a40;
       color: white;
@@ -189,7 +158,6 @@
       height: 400px;
       border: none;
     }
-
   </style>
 </head>
 <body>
@@ -230,13 +198,15 @@
   </section>
 
   <!-- Services Section -->
-  <section class="services container" id="services">
-    <h2 class="text-center">Our Services</h2>
-    <p class="text-muted text-center small mb-4">
-      Established in 2010, we have proudly served over 500 satisfied customers. With more than 14 years of experience, we specialize in delivering top-quality window cleaning services across Yorkshire.
-    </p>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
+ <section class="services container" id="services">
+  <h2 class="text-center mb-5">Our Services</h2>
+  
+  <p class="text-muted small">
+    A demo business Established in 2010, we have proudly served over 500 satisfied customers in the local community. With more than 14 years of experience, we specialise in delivering top-quality window cleaning services across Yorkshire. Whether it's residential or commercial properties, our team ensures spotless results every time, using the latest equipment and eco-friendly products. We cover the Yorkshire and surrounding regions, offering reliable and affordable cleaning solutions to keep your windows gleaming.
+  </p>
+  
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
         <div class="service-item">
           <i class="fas fa-broom"></i>
           <h4>Residential Cleaning</h4>
@@ -260,52 +230,96 @@
     </div>
   </section>
 
-  <!-- Gallery Section -->
-  <section class="gallery container-fluid py-5" id="gallery" style="background: linear-gradient(to top, #87CEFA, #88A4E3);">
-    <h2 class="text-center">Our Work</h2>
-    <div class="text-center mb-5">
-      <p>We take pride in offering professional cleaning services for both residential and commercial properties. Our team is fully equipped to handle high-rise buildings and large commercial complexes.</p>
+   <!-- Gallery Section -->
+<section class="gallery container-fluid py-5" id="gallery" style="background: linear-gradient(to top, #87CEFA, #88A4E3);">
+
+  <h2 class="text-center mb-5">Our Work</h2>
+
+  <!-- Add new paragraphs here -->
+  <div class="mb-5">
+    <p>At Crystal Clear Windows, we take pride in offering professional cleaning services for a range of clients, including both residential and commercial properties. Over the years, we have worked on numerous commercial projects, helping businesses maintain clean and welcoming spaces for their customers and employees.</p>
+    <p>Some of the commercial sectors we’ve served include offices, retail stores, hotels, and schools. Our team is fully equipped to handle high-rise buildings and large commercial complexes. No matter the size of the job, our commitment to delivering excellent results remains the same. We understand the importance of a clean and professional appearance, which is why we work efficiently and discreetly to minimize disruptions to your business.</p>
+    <p>Our process involves a thorough cleaning from start to finish, using eco-friendly solutions and the latest technology to ensure a streak-free shine every time. After we finish, we also make sure to leave the job site tidy, so your space is left spotless and ready for business. Whether it's a routine clean or a one-off job, we guarantee the best results at competitive rates.</p>
+  </div>
+
+  <!-- Gallery Images -->
+  <div class="row g-4">
+    <div class="col-sm-6 col-md-4">
+      <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Window Cleaning 1" class="img-fluid">
     </div>
-    <div class="row g-4">
-      <div class="col-sm-6 col-md-4">
-        <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Gallery Image 1" class="img-fluid">
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <img src="pexels-konstantin-koptelov-911758.jpg" alt="Gallery Image 2" class="img-fluid">
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <img src="pexels-lumn-167047.jpg" alt="Gallery Image 3" class="img-fluid">
+    <div class="col-sm-6 col-md-4">
+      <img src="pexels-photo-commercial-building.jpg" alt="Commercial Cleaning 2" class="img-fluid">
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <img src="pexels-markus-spiske-3808689.jpg" alt="High Rise Building" class="img-fluid">
+    </div>
+  </div>
+</section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="text-center mb-5">What Our Clients Say</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="testimonial-item">
+            <i class="fas fa-quote-left testimonial-img"></i>
+            <h5>Emily R.</h5>
+            <p>"Outstanding job! My windows have never looked this clean. Highly recommend!"</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="testimonial-item">
+            <i class="fas fa-quote-left testimonial-img"></i>
+            <h5>John M.</h5>
+            <p>"Professional and reliable service. Crystal Clear Windows exceeded my expectations!"</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="testimonial-item">
+            <i class="fas fa-quote-left testimonial-img"></i>
+            <h5>Sarah L.</h5>
+            <p>"Quick, efficient, and very thorough. Will definitely use them again."</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="contact container" id="contact">
-    <h2 class="text-center">Contact Us</h2>
+  <section class="contact container-fluid" id="contact" style="background-color: #f8f9fa;">
+    <h2 class="text-center mb-5">Contact Us</h2>
     <div class="row">
-      <div class="col-md-6 text-center">
-        <p><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+1234567890">+123 456 7890</a></p>
-        <p><strong>Follow Us:</strong></p>
+      <div class="col-md-6 mb-4">
+        <h5>Email</h5>
+        <p><i class="fa fa-envelope"></i> crystalclear@gmail.com</p>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h5>Phone</h5>
+        <p><i class="fa fa-phone"></i> +44 123 4567 890</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Follow Us</h5>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
       <div class="col-md-6">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen></iframe>
+        <h5>Location</h5>
+        <p><i class="fa fa-map-marker"></i> Yorkshire, UK</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center">
-    <p>&copy; 2024 Crystal Clear Windows | Designed by Your Company</p>
+  <footer class="text-center py-4">
+    <p>© 2024 Crystal Clear Windows | All Rights Reserved.</p>
   </footer>
 
-  <!-- Bootstrap JS and dependencies -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
-
