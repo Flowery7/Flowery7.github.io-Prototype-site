@@ -318,7 +318,184 @@
               <i class="fab fa-facebook fa-2x"></i>
             </a>
           </li>
-          <
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com" target="_blank">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section" id="testimonials">
+  <!-- Section Divider with Title -->
+  <div class="section-divider text-center" data-aos="fade-up">
+    <h2>What Our Clients Say</h2>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+      <!-- Testimonial 1 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="testimonial-box">
+          <div class="testimonial-badge">
+            <img src="client1.jpg" alt="Client 1">
+          </div>
+          <p>"Crystal Clear Windows did an amazing job! Our office windows have never looked so spotless. Highly recommend!"</p>
+          <strong>John Smith, Office Manager</strong>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="testimonial-box">
+          <div class="testimonial-badge">
+            <img src="client2.jpg" alt="Client 2">
+          </div>
+          <p>"The team was professional, efficient, and friendly. Our store windows are sparkling, and we couldn’t be happier!"</p>
+          <strong>Emily Taylor, Retail Owner</strong>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="testimonial-box">
+          <div class="testimonial-badge">
+            <img src="client3.jpg" alt="Client 3">
+          </div>
+          <p>"Great service and great value. Our hotel's windows look pristine. Would definitely use again!"</p>
+          <strong>David Lee, Hotel Manager</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Custom CSS for Services, Testimonials, and Contact Sections -->
+<style>
+  .service-box, .testimonial-box {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-box:hover, .testimonial-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .service-icon {
+    color: #88A4E3;
+  }
+
+  .service-box h3, .testimonial-box strong {
+    color: #007bff;
+    font-weight: 600;
+  }
+
+  .section-divider {
+    position: relative;
+    padding: 40px 0;
+    margin: 50px 0;
+    background-color: #f8f9fa;
+    border-top: 5px solid #88A4E3;
+    border-bottom: 5px solid #88A4E3;
+  }
+
+  .section-divider h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #007bff;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    display: inline-block;
+    padding: 0 20px;
+    text-transform: uppercase;
+  }
+
+  .testimonial-badge img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-section form input, .contact-section form textarea {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+  }
+
+  .contact-section form button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .contact-section form button:hover {
+    background-color: #0056b3;
+  }
+
+  .list-inline-item a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .list-inline-item a:hover {
+    color: #0056b3;
+  }
+
+  .fab {
+    margin: 10px;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+
+  .fab:hover {
+    color: #0056b3;
+  }
+</style>
+
+<!-- AOS Library Initialization for Scroll Animations -->
+<script>
+  AOS.init({
+    duration: 1000,
+    offset: 100
+  });
+</script>
+
 
 
 
