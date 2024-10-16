@@ -199,38 +199,185 @@
     </div>
   </section>
 
-  <!-- Services Section -->
- <section class="services container" id="services">
-  <h2 class="text-center mb-5">Our Services</h2>
-  
-  <p class="text">
-    A demo business Established in 2010, we have proudly served over 500 satisfied customers in the local community. With more than 14 years of experience, we specialise in delivering top-quality window cleaning services across Yorkshire. Whether it's residential or commercial properties, our team ensures spotless results every time, using the latest equipment and eco-friendly products. We cover the Yorkshire and surrounding regions, offering reliable and affordable cleaning solutions to keep your windows gleaming.
-  </p>
-  
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-        <div class="service-item">
-          <i class="fas fa-broom"></i>
-          <h4>Residential Cleaning</h4>
-          <p>Expert window cleaning services for your home, ensuring streak-free and sparkling windows.</p>
+ <!-- Our Services Section -->
+<section class="services-section" id="services">
+  <!-- Section Divider with Title -->
+  <div class="section-divider text-center" data-aos="fade-up">
+    <h2>Our Services</h2>
+  </div>
+
+  <div class="container">
+    <!-- Services Content -->
+    <div class="row g-4" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-sm-6 col-md-4">
+        <div class="service-box">
+          <h3>Residential Window Cleaning</h3>
+          <p>Crystal clear windows for your home with eco-friendly solutions and a streak-free shine.</p>
         </div>
       </div>
-      <div class="col">
-        <div class="service-item">
-          <i class="fas fa-building"></i>
-          <h4>Commercial Cleaning</h4>
-          <p>Professional window cleaning solutions tailored for businesses of all sizes.</p>
+      <div class="col-sm-6 col-md-4">
+        <div class="service-box">
+          <h3>Commercial Cleaning</h3>
+          <p>Expert cleaning for offices, retail spaces, hotels, and high-rise buildings with minimal disruption to your business.</p>
         </div>
       </div>
-      <div class="col">
-        <div class="service-item">
-          <i class="fas fa-water"></i>
-          <h4>Specialized Services</h4>
-          <p>Includes screen cleaning, gutter cleaning, and pressure washing to keep your property pristine.</p>
+      <div class="col-sm-6 col-md-4">
+        <div class="service-box">
+          <h3>High-Rise Cleaning</h3>
+          <p>Specialized cleaning services for high-rise and large commercial complexes, ensuring safety and precision.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- What Our Clients Say Section -->
+<section class="testimonials-section" id="testimonials">
+  <!-- Section Divider with Title -->
+  <div class="section-divider text-center" data-aos="fade-up">
+    <h2>What Our Clients Say</h2>
+  </div>
+
+  <div class="container">
+    <!-- Testimonials Content -->
+    <div class="row g-4" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-md-6">
+        <div class="testimonial-box">
+          <p>“Crystal Clear Windows has been fantastic! They always leave our office windows looking spotless.”</p>
+          <p><strong>- John D., Office Manager</strong></p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="testimonial-box">
+          <p>“The team did an incredible job on our retail store’s windows, making the whole place look brighter and more inviting.”</p>
+          <p><strong>- Sarah L., Store Owner</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <!-- Section Divider with Title -->
+  <div class="section-divider text-center" data-aos="fade-up">
+    <h2>Contact Us</h2>
+  </div>
+
+  <div class="container">
+    <!-- Contact Form or Information -->
+    <div class="row g-4" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-md-6">
+        <h3>Get In Touch</h3>
+        <p>Reach out to us for a free consultation or to book a cleaning service today.</p>
+        <p><strong>Email:</strong> info@crystalclearwindows.com</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+      </div>
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Custom CSS for Services, Testimonials, and Contact Sections -->
+<style>
+  .service-box, .testimonial-box {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-box:hover, .testimonial-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .service-box h3, .testimonial-box strong {
+    color: #007bff;
+    font-weight: 600;
+  }
+
+  .service-box p, .testimonial-box p {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .section-divider {
+    position: relative;
+    padding: 40px 0;
+    margin: 50px 0;
+    background-color: #f8f9fa;
+    border-top: 5px solid #88A4E3;
+    border-bottom: 5px solid #88A4E3;
+  }
+
+  .section-divider h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #007bff;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    display: inline-block;
+    padding: 0 20px;
+    text-transform: uppercase;
+  }
+
+  .testimonial-box {
+    font-style: italic;
+    background-color: #fff;
+    border-left: 4px solid #88A4E3;
+  }
+
+  .testimonial-box p:last-child {
+    font-style: normal;
+    text-align: right;
+  }
+
+  .contact-section form input, .contact-section form textarea {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+  }
+
+  .contact-section form button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .contact-section form button:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+<!-- AOS Library Initialization for Scroll Animations -->
+<script>
+  AOS.init({
+    duration: 1000,
+    offset: 100
+  });
+</script>
+
 
   <!-- Dynamic Scroll CSS and JavaScript Libraries -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
@@ -263,7 +410,7 @@
       </div>
       <div class="col-sm-6 col-md-4">
         <div class="gallery-item">
-          <img src="pexels-photo-commercial-building.jpg" alt="Commercial Cleaning" class="img-fluid rounded">
+          <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Commercial Cleaning" class="img-fluid rounded">
           <div class="gallery-overlay">
             <div class="gallery-text">Commercial Cleaning Project</div>
           </div>
@@ -271,7 +418,7 @@
       </div>
       <div class="col-sm-6 col-md-4">
         <div class="gallery-item">
-          <img src="pexels-markus-spiske-3808689.jpg" alt="High-Rise Building Cleaning" class="img-fluid rounded">
+          <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="High-Rise Building Cleaning" class="img-fluid rounded">
           <div class="gallery-overlay">
             <div class="gallery-text">High-Rise Building</div>
           </div>
