@@ -232,31 +232,133 @@
     </div>
   </section>
 
-   <!-- Gallery Section -->
-<section class="gallery container-fluid py-5" id="gallery" style="background: linear-gradient(to top,  #88A4E3, #87CEFA);">
+  <!-- Dynamic Scroll CSS and JavaScript Libraries -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-  <h2 class="text-center mb-5">Our Work</h2>
-
-  <!-- Add new paragraphs here -->
-  <div class="mb-5">
-    <p>At Crystal Clear Windows, we take pride in offering professional cleaning services for a range of clients, including both residential and commercial properties. Over the years, we have worked on numerous commercial projects, helping businesses maintain clean and welcoming spaces for their customers and employees.</p>
-    <p>Some of the commercial sectors we’ve served include offices, retail stores, hotels, and schools. Our team is fully equipped to handle high-rise buildings and large commercial complexes. No matter the size of the job, our commitment to delivering excellent results remains the same. We understand the importance of a clean and professional appearance, which is why we work efficiently and discreetly to minimize disruptions to your business.</p>
-    <p>Our process involves a thorough cleaning from start to finish, using eco-friendly solutions and the latest technology to ensure a streak-free shine every time. After we finish, we also make sure to leave the job site tidy, so your space is left spotless and ready for business. Whether it's a routine clean or a one-off job, we guarantee the best results at competitive rates.</p>
+<!-- Gallery Section with Divider -->
+<section class="gallery-section" id="gallery">
+  <!-- Section Divider with Title -->
+  <div class="section-divider text-center" data-aos="fade-up">
+    <h2>Our Work</h2>
   </div>
 
-  <!-- Gallery Images -->
-  <div class="row g-4">
-    <div class="col-sm-6 col-md-4">
-      <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Window Cleaning 1" class="img-fluid">
+  <div class="container">
+    <!-- New Paragraphs with Design Focus -->
+    <div class="intro-text text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+      <p>At Crystal Clear Windows, we deliver professional cleaning services for both residential and commercial clients. We are proud to have completed numerous projects, helping businesses create clean and welcoming environments.</p>
+      <p>Our expertise spans various industries, including offices, retail stores, hotels, and schools. Our team is equipped to handle high-rise buildings and large commercial complexes, ensuring exceptional results every time.</p>
+      <p>We guarantee a spotless shine using eco-friendly solutions and the latest technology. Our commitment to leaving every space pristine is second to none, making us the go-to for both routine and one-time cleaning jobs.</p>
     </div>
-    <div class="col-sm-6 col-md-4">
-      <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Window Cleaning 2" class="img-fluid">
-    </div>
-    <div class="col-sm-6 col-md-4">
-      <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Window Cleaning 3" class="img-fluid">
+
+    <!-- Gallery Images with Hover Effects -->
+    <div class="row g-4" data-aos="fade-up" data-aos-delay="400">
+      <div class="col-sm-6 col-md-4">
+        <div class="gallery-item">
+          <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Window Cleaning 1" class="img-fluid rounded">
+          <div class="gallery-overlay">
+            <div class="gallery-text">Residential Cleaning Project</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="gallery-item">
+          <img src="pexels-photo-commercial-building.jpg" alt="Commercial Cleaning" class="img-fluid rounded">
+          <div class="gallery-overlay">
+            <div class="gallery-text">Commercial Cleaning Project</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="gallery-item">
+          <img src="pexels-markus-spiske-3808689.jpg" alt="High-Rise Building Cleaning" class="img-fluid rounded">
+          <div class="gallery-overlay">
+            <div class="gallery-text">High-Rise Building</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- Custom CSS for the Dynamic Design and Dividers -->
+<style>
+  .section-divider {
+    position: relative;
+    padding: 40px 0;
+    margin: 50px 0;
+    background-color: #f8f9fa;
+    border-top: 5px solid #88A4E3;
+    border-bottom: 5px solid #88A4E3;
+  }
+
+  .section-divider h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #007bff;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    display: inline-block;
+    padding: 0 20px;
+    text-transform: uppercase;
+  }
+
+  .intro-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gallery-item img {
+    transition: transform 0.4s ease;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+
+  .gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery-item:hover .gallery-overlay {
+    opacity: 1;
+  }
+
+  .gallery-text {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+</style>
+
+<!-- Initialize AOS for Scroll Effects -->
+<script>
+  AOS.init({
+    duration: 1000,
+    offset: 100
+  });
+</script>
+
 
 
   <section class="testimonials container" id="testimonials">
