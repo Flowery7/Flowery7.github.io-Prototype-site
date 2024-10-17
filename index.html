@@ -57,6 +57,25 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
+/* Add margin around sections */
+section {
+  margin: 40px 0; /* Adds 40px margin on top and bottom */
+}
+
+/* Alternatively, you can target specific sections for different margins */
+.hero {
+  margin-bottom: 60px; /* Adds extra space below the hero section */
+}
+
+.services-section {
+  margin-top: 60px; /* Adds space above the services section */
+}
+
+.contact-section {
+  margin-bottom: 40px; /* Adds space below the contact section */
+}
+
+
     .services, .gallery, .contact {
       padding: 60px 0;
     }
@@ -488,7 +507,7 @@
     <div class="row g-4" data-aos="fade-up" data-aos-delay="400">
       <div class="col-sm-6 col-md-4">
         <div class="gallery-item">
-          <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Window Cleaning 1" class="img-fluid rounded">
+          <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Window Cleaning 1" class="img-fluid rounded" loading="lazy">
           <div class="gallery-overlay">
             <div class="gallery-text">Residential Cleaning Project</div>
           </div>
@@ -496,7 +515,7 @@
       </div>
       <div class="col-sm-6 col-md-4">
         <div class="gallery-item">
-          <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Commercial Cleaning" class="img-fluid rounded">
+          <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Window Cleaning 1" class="img-fluid rounded" loading="lazy">
           <div class="gallery-overlay">
             <div class="gallery-text">Commercial Cleaning Project</div>
           </div>
@@ -504,7 +523,7 @@
       </div>
       <div class="col-sm-6 col-md-4">
         <div class="gallery-item">
-          <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="High-Rise Building Cleaning" class="img-fluid rounded">
+         <img src="pexels-tima-miroshnichenko-6195956.jpg" alt="Window Cleaning 1" class="img-fluid rounded" loading="lazy">
           <div class="gallery-overlay">
             <div class="gallery-text">High-Rise Building</div>
           </div>
@@ -518,8 +537,8 @@
 <style>
   .section-divider {
     position: relative;
-    padding: 40px 0;
-    margin: 50px 0;
+    padding: 15px 0;
+    margin: 20px 0;
     background-color: #f8f9fa;
     border-top: 5px solid #88A4E3;
     border-bottom: 5px solid #88A4E3;
@@ -527,7 +546,7 @@
 
   .section-divider h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #007bff;
     position: relative;
     z-index: 2;
@@ -536,6 +555,7 @@
     padding: 0 20px;
     text-transform: uppercase;
   }
+  
 
   .intro-text p {
     font-size: 1.1rem;
