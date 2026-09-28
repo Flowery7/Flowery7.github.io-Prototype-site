@@ -1,0 +1,16 @@
+{
+  "business_name": "Kestrel Property Solutions",
+  "business_type": "Multi-service property company (roofing, landscaping, gardening, painting)",
+  "area": "United Kingdom",
+  "contact": {
+    "phone": "0800 118 4172",
+    "email": "Kestrelproperty8@gmail.com",
+    "whatsapp": "https://wa.me/448001184172"
+  },
+  "colour_scheme": "dark blue + gold",
+  "services": ["Roofing", "Landscaping", "Gardening", "Painting & Decorating"],
+  "owner_contact": "Hopie Parker",
+  "domain": "https://www.kestrelpropertysolutions.co.uk",
+  "pages": ["index.html", "about.html", "blog.html"],
+  "built": "2026-09-25"
+}
